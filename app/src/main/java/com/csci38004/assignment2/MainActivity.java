@@ -1,11 +1,12 @@
 package com.csci38004.assignment2;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Button;
 import android.view.View;
-
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,28 +15,35 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // create field for property animations button view
-        final Button propertyAnimationsButton = findViewById(R.id.viewPropertyAnimationsButton);
+        final Button cakeAnimationsButton = findViewById(R.id.cakeButton);
+        final Button cookieAnimationsButton = findViewById(R.id.cookieButton);
+        final Button crepeAnimationsButton = findViewById(R.id.crepeButton);
 
-        // create field for object animations button view
-        final Button objectAnimationsButton = findViewById(R.id.objectAnimationsButton);
-
-        // add a click listener to viewPropertyAnimationsButton to launch ViewPropertyAnimationsActivity
-        propertyAnimationsButton.setOnClickListener(new View.OnClickListener() {
+        cakeAnimationsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Intent propertyIntent = new Intent(v.getContext(), ViewPropertyAnimationsActivity.class);
+                Intent propertyIntent = new Intent(v.getContext(), ViewCakeAnimationsActivity.class);
                 v.getContext().startActivity(propertyIntent);
             }
         });
 
-        // add a click listener to objectAnimationsButton to launch ObjectAnimationsActivity
-        objectAnimationsButton.setOnClickListener(new View.OnClickListener() {
+        cookieAnimationsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Intent objectIntent = new Intent(v.getContext(), ObjectAnimationsActivity.class);
-                v.getContext().startActivity(objectIntent);
+                Intent propertyIntent = new Intent(v.getContext(), ViewCookieAnimationsActivity.class);
+                v.getContext().startActivity(propertyIntent);
             }
         });
+
+        crepeAnimationsButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                Intent propertyIntent = new Intent(v.getContext(), ViewCrepeAnimationsActivity.class);
+                v.getContext().startActivity(propertyIntent);
+            }
+        });
+
+
     }
 }
+

@@ -11,4 +11,9 @@
     <string name="red">R:</string>
     <string name="blue">B:</string>
     <string name="green">G:</string>
+    <string name="crepe" />
+    <string name="cookie" />
+    <string name="cake" />
+    <string name="search" />
+    <string name="appbar_scrolling_view_behavior" />
 </resources>
