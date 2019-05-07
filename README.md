@@ -47,4 +47,4 @@
 + Open up `ObjectAnimationsActivity` and its layout (`activity_object_animations`)
 + Create fields for each view, and initialize them in `onCreate` using `findViewById()`
 + Create an instance of `AppCompatSeekBar.OnSeekBarChangeListener` inside `onCreate()`, and set it on each SeekBar using `setOnSeekBarChangeListener()`
-+ Fill in the `updatePreview()` method to satisfy the requirements in its TODO comment
++ Fill in the `updatePreview()` method to satisfy the requirements in its comment
